@@ -6,8 +6,10 @@ using namespace std;
 
 char box[9] = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 int flag;
+
 void viewBoard();
 int winCheck();
+
 int main()
 {
 	int player = 1, i, choice = 0;
@@ -55,6 +57,7 @@ int main()
 	} while (i == -1);
 
 	viewBoard();
+	
 	if (i == 1)
 		cout << "\n\tPlayer " << --player << " Wins!\n";
 	else
@@ -65,6 +68,7 @@ int main()
 
 	return 0;
 }
+
 void viewBoard()
 {
 	cout << "\t   Tic Tac Toe Game\n\n";
@@ -82,6 +86,7 @@ void viewBoard()
 	cout << "\t|_______|_______|_______|\n";
 
 }
+
 int winCheck()
 {
 	system("cls");
